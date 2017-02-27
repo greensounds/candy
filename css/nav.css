@@ -40,8 +40,10 @@
 	margin-top: 0;
 }
 
-span {
+span.tagline {
 	background: pink;
+	font-size: 1em;
+	padding: .5em;
 }
 
 .nav a {
@@ -98,6 +100,11 @@ span {
 	}
 	.col {
 		flex: 1;
+	}
+
+	span.tagline {
+		font-size: 2em;
+		padding: 1em;
 	}
 }
 

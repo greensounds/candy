@@ -42,11 +42,13 @@ a {
 	background: pink;
 	padding: 1.5em;
 	margin-top: 2em;
+  color: white;
+  font-weight: bold;
 }
 .banner {
 	color: #fff;
-	background: url('../img/fondo.png');
-	background-size: contain;
+	background: url('../img/fondo.jpg');
+	background-size: inherit;
 	padding: 10em 0;
 	margin-bottom: 48px;
 }
@@ -81,6 +83,10 @@ a {
   height: auto; 
 }
 
+section.portfolio_block{
+  margin: 0 2em;
+}
+
 
 /*BLUR*/
 .blur img {
@@ -111,9 +117,66 @@ a {
 }
 
 h2 {
+  text-align: center;
+  font-family: lobster;
+}
+
+h2#galeria {
 	text-align: center;
 	font-family: lobster;
+  margin-top: 4em;
 }
+
+
+
+/*Estilos de contacto*/
+form {
+  max-width: 450px;
+  margin: 0 auto 50px;
+  padding: 20px;
+}
+
+form h2{
+  text-align: center;
+}
+
+form input, textarea{
+  border: 3px solid pink;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+input[type="submit"]{
+  display: inline-block;
+  margin: 20px 0;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 1em 2em;
+  border-radius: 3px;
+  transition: all 300ms;
+  background: pink;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 4px pink;
+}
+
+textarea{
+  height: 10em;
+}
+
+form input:focus, textarea:focus {
+  outline: none;
+  border-color: pink;
+}
+
+form label {
+  display: block;
+  margin-bottom: 20px;
+}
+/*terminas estílos de contacto
 
 /* --------------------------
   Media Queries
